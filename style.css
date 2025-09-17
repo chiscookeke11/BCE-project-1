@@ -62,9 +62,8 @@ main {
   border-radius: 16px;
   padding: 10px 16px 16px 10px;
   border: 2px solid white;
-
 }
-.heart-wrapper{
+.heart-wrapper {
   width: 50px !important;
   height: 50px !important;
   border-radius: 50%;
@@ -73,25 +72,21 @@ main {
   justify-content: center !important;
 }
 
-.heart-wrapper.first{
-  background-color: #685FD4;
+.heart-wrapper.first {
+  background-color: #685fd4;
 }
-.heart-wrapper.second{
+.heart-wrapper.second {
   background-color: #f1e8cf;
 }
-.heart-wrapper.third{
+.heart-wrapper.third {
   background-color: #a8cbf0;
 }
-
-
-
 
 .left-section img {
   width: 16px;
 }
 
-
-.right-image-wrapper{
+.right-image-wrapper {
   padding: 50px 30px 50px 30px;
   border-radius: 200px;
   display: flex;
@@ -101,25 +96,65 @@ main {
   width: fit-content;
   position: relative;
 }
-.left-star{
+.left-star {
   position: absolute;
   width: 60px !important;
   left: 10px;
   top: 30px;
 }
-.right-star{
- position: absolute;
+.right-star {
+  position: absolute;
   width: 60px !important;
   right: 10px;
   bottom: 30px;
 }
-
-
-
-
 
 .right-section img {
   width: 300px;
 }
 
 
+
+
+
+
+
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    height: fit-content;
+    padding: 20px 30px 20px 30px;
+  }
+
+  .bottom-box {
+    padding: 10px 5px 10px 5px;
+  }
+  .bottom-part {
+    gap: 8px;
+  }
+  .heart-wrapper {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .left-section img {
+    width: 10px;
+  }
+
+  .left-section div {
+    max-width: none;
+  }
+
+  .right-section img {
+    width: 260px;
+  }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bottom-part {
+    flex-direction: column;
+  }
+}
